@@ -1,0 +1,31 @@
+# Dependencies & Build Artifacts
+node_modules/
+dist/
+build/
+target/
+*.jar
+*.war
+*.ear
+.vite/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# IDE & OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs & Local Uploads
+logs/
+*.log
+uploads/
+backend/uploads/
+.tools/
+
