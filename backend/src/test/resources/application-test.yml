@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:quickkart_test;MODE=MySQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  flyway:
+    enabled: false
+
+app:
+  security:
+    login-rate-limit: 500
+  jwt:
+    secret: test-secret-key-minimum-64-characters-long-for-hmac-sha256-signing
+    access-expiration-ms: 3600000
+    refresh-expiration-ms: 604800000
+  bootstrap:
+    owner-name: Test Owner
+    owner-email: owner@test.local
+    owner-password: OwnerPassword@123
